@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CategoryFormComponent } from './category/category-form/category-form.component';
-import { CategoryListComponent } from './category/category-list/category-list.component';
-import { PostListComponent } from './post/post-list/post-list.component';
 import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './user/register/register.component';
+import { CategoryListComponent } from './category/category-list/category-list.component';
+import { DashboardComponent } from './post/components/dashboard/dashboard.component';
+import { PostListComponent } from './post/components/post-list/post-list.component';
 import { ProfileComponent } from './user/profile/profile.component';
-import { DashboardComponent } from './post/dashboard/dashboard.component';
+import { RegisterComponent } from './user/register/register.component';
 
 const routes: Routes = [
   {
