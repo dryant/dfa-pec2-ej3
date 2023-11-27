@@ -13,14 +13,14 @@
                     <li class="nav-item" *ngIf="showAuthSection"><a class="nav-link" (click)="profile()">Profile</a></li>
                     <li class="nav-item" *ngIf="showAuthSection"><a class="nav-link" (click)="logout()">Logout</a></li> 
                 -->
-                <li class="nav-item"><a class="nav-link">Dashboard</a></li>
-                <li class="nav-item"><a class="nav-link">Home</a></li>
-                <li class="nav-item"><a class="nav-link">Login</a></li>
-                <li class="nav-item"><a class="nav-link" >Register</a></li>
-                <li class="nav-item"><a class="nav-link" >Admin posts</a></li>
-                <li class="nav-item"><a class="nav-link" >Admin categories</a></li>
-                <li class="nav-item"><a class="nav-link" >Profile</a></li>
-                <li class="nav-item"><a class="nav-link" >Logout</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="dashboard()">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="home()">Home</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="login()">Login</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="register()">Register</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="posts()">Admin posts</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="categories()">Admin categories</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="profile()">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" (click)="logout()">Logout</a></li>
             </ul>
         </div>
     </div>
