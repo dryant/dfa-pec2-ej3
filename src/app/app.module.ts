@@ -8,6 +8,9 @@ import { PostModule } from './post/post.module';
 import { SharedModule } from './shared/shared.module';
 import { CategoryModule } from './category/category.module';
 
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from 'src/environments/environment.development';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -16,6 +19,10 @@ import { CategoryModule } from './category/category.module';
     SharedModule,
     PostModule,
     CategoryModule,
+    StoreDevtoolsModule.instrument({
+      maxAge: 25,
+      logOnly: environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
