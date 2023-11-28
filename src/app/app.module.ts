@@ -11,6 +11,8 @@ import { CategoryModule } from './category/category.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from 'src/environments/environment.development';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -19,6 +21,7 @@ import { environment } from 'src/environments/environment.development';
     SharedModule,
     PostModule,
     CategoryModule,
+    ReactiveFormsModule,
     StoreDevtoolsModule.instrument({
       maxAge: 25,
       logOnly: environment.production,

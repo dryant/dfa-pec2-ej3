@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { CategoryListComponent } from './category/category-list/category-list.component';
 import { DashboardComponent } from './post/components/dashboard/dashboard.component';
+import { PostFormComponent } from './post/components/post-form/post-form.component';
 import { PostListComponent } from './post/components/post-list/post-list.component';
 import { ProfileComponent } from './user/profile/profile.component';
 import { RegisterComponent } from './user/register/register.component';
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: 'newpost',
+    component: PostFormComponent,
   },
 ];
 @NgModule({
