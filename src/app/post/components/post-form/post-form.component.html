@@ -7,26 +7,26 @@
                     <form>
                         <div class="mb-3">
                             <label for="title" class="form-label">Title:</label>
-                            <input type="text" class="form-control" id="title" placeholder="Enter the title">
+                            <input type="text" class="form-control" id="title" placeholder="Enter the title" [formControl]="titleInput">
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Description:</label>
-                            <textarea class="form-control" id="description" rows="3" placeholder="Enter the description"></textarea>
+                            <textarea class="form-control" id="description" rows="3" placeholder="Enter the description" [formControl]="descriptionInput"></textarea>
                         </div>
                         <div class="mb-3">
-                            <label for="publication-date" class="form-label">Publication date:</label>
-                            <input type="date" class="form-control" id="publication-date">
+                            <label for="publication-date" class="form-label" >Publication date:</label>
+                            <input type="date" class="form-control" id="publication-date" [formControl]="dateInput">
                         </div>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="choose-categories" class="form-label">Choose categories:</label>
-                            <select class="form-select" id="choose-categories" multiple>
+                            <select class="form-select" id="choose-categories" multiple [formControl]="categoriesInput">
                                 <option value="category1">Category 1</option>
                                 <option value="category2">Category 2</option>
                                 <option value="category3">Category 3</option>
                                 <option value="category4">Category 4</option>
                             </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </div> -->
+                        <button type="submit" class="btn btn-primary" (click)="addNewPost()">Submit</button>
                     </form>
                 </div>
             </div>
